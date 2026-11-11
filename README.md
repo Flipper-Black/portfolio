@@ -2,6 +2,8 @@
 
 A personal collection of projects in software, engineering, and experimental physics.
 
+**[Visit my portfolio →](https://flipper-black.github.io/portfolio/)**
+
 ## Projects
 
 ### Barcona Systems

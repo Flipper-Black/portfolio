@@ -1,72 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-motion="active">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Things I build. — Selected projects</title>
-  <meta name="description" content="A personal collection of projects in software, engineering, and experimental physics.">
+  <title>Flipper-Black — Projects</title>
+  <meta name="description" content="Projects in software, engineering, and experimental physics by Flipper-Black.">
   <meta name="referrer" content="no-referrer">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#f6f5f0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#080b14">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./interactions.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true">
+    <div class="light light--blue"></div>
+    <div class="light light--violet"></div>
+    <div class="light light--cyan"></div>
+    <div class="ambient-grid"></div>
+    <div class="ambient-points"></div>
+  </div>
 
   <header class="site-header page-width">
-    <a class="wordmark" href="#top" aria-label="Philipp / Projects, back to top">
-      <svg class="collection-mark" viewBox="0 0 24 24" aria-hidden="true" fill="none">
-        <path d="M3 9V3h6M15 3h6v6M21 15v6h-6M9 21H3v-6" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M9 15l6-6" stroke="currentColor" stroke-width="1.5"/>
-      </svg>
-      <span>Philipp / Projects</span>
+    <a class="wordmark" href="#top" aria-label="Flipper-Black, back to top">
+      <svg viewBox="0 0 28 28" fill="none" aria-hidden="true" class="brand-mark"><path d="M9 5H5v18h4m10-18h4v18h-4M17 8l-6 12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Flipper-Black</span>
     </a>
     <nav aria-label="Main navigation">
-      <a class="nav-link" href="#projects">Selected projects <span aria-hidden="true">↙</span></a>
+      <a class="nav-link" href="#projects">Projects <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main id="main" class="page-width" tabindex="-1">
-    <section class="intro" aria-labelledby="intro-title">
-      <div class="intro-heading">
-        <p class="eyebrow">Software · Engineering · Research</p>
-        <h1 id="intro-title">Things I <em>build.</em></h1>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-heading">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>A personal project collection</p>
+        <h1 id="hero-title">Building ideas<br><span>into reality.</span></h1>
       </div>
-      <p class="intro-description">A collection of projects in software, engineering, and experimental physics.</p>
+      <div class="hero-aside">
+        <p class="hero-description">Projects in software, engineering, and experimental physics.</p>
+        <a class="explore-link" href="#projects">Explore projects <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
     </section>
 
     <section id="projects" class="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <h2 id="projects-title">Selected projects</h2>
-        <span class="index-range" aria-hidden="true">01 — 02</span>
+      <div class="section-heading" data-reveal>
+        <h2 id="projects-title">Selected projects<span aria-hidden="true">.</span></h2>
+        <span class="section-caption">Project index</span>
       </div>
-
-      <!-- PROJECT CONTENT: Edit project titles, descriptions, statuses and links here.
-           Keep each project as an article. Add links only when their destination is public
-           and approved for publication. -->
-      <div class="project-list">
-        <article class="project" id="barcona" aria-labelledby="barcona-title">
-          <span class="project-number" aria-hidden="true">01 /</span>
-          <div class="project-content">
-            <p class="project-category">Computer vision <span aria-hidden="true">/</span> Engineering</p>
+      <!-- PROJECT CONTENT: Each article is the single source for its title, description,
+           tags, status and public link. Inline SVG graphics are abstract illustrations. -->
+      <div class="project-grid">
+        <article class="project-card project-card--scan" id="barcona" aria-labelledby="barcona-title" data-reveal>
+          <figure class="project-visual">
+            <span class="art-index" aria-hidden="true">01 /</span>
+            <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false" class="project-art">
+  <defs>
+    <linearGradient id="scan-edge" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#6fe5ff"/><stop offset="1" stop-color="#5e7aff"/></linearGradient>
+    <radialGradient id="scan-halo"><stop stop-color="#247bde" stop-opacity=".3"/><stop offset="1" stop-color="#247bde" stop-opacity="0"/></radialGradient>
+    <pattern id="scan-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#aac7ff" stroke-opacity=".09" stroke-width=".6"/></pattern>
+  </defs>
+  <path fill="url(#scan-grid)" d="M0 0h600v220H0z"/>
+  <ellipse cx="300" cy="113" rx="240" ry="130" fill="url(#scan-halo)"/>
+  <g fill="none" stroke="#7493c0" stroke-opacity=".14"><path d="M43 54h106v105H43zM451 54h106v105H451z"/><path d="M58 76h72m-72 12h42m-42 48h72m335-60h72m-72 12h42m-42 48h72"/></g>
+  <g transform="rotate(-5 300 110)">
+    <rect x="175" y="36" width="250" height="150" rx="9" fill="#101d36" fill-opacity=".8" stroke="#6ea7e5" stroke-opacity=".24"/>
+    <path d="M193 64V53h15m184 0h15v11M193 158v11h15m184 0h15v-11" fill="none" stroke="url(#scan-edge)" stroke-width="2"/>
+    <g fill="url(#scan-edge)"><rect x="211" y="68" width="2" height="85" rx=".5" opacity="0.4"/><rect x="217" y="68" width="5" height="85" rx=".5" opacity="0.85"/><rect x="226" y="68" width="2" height="85" rx=".5" opacity="0.6"/><rect x="232" y="68" width="3" height="85" rx=".5" opacity="0.8"/><rect x="240" y="68" width="6" height="85" rx=".5" opacity="0.6"/><rect x="250" y="68" width="2" height="85" rx=".5" opacity="1"/><rect x="256" y="68" width="4" height="85" rx=".5" opacity="0.7"/><rect x="264" y="68" width="2" height="85" rx=".5" opacity="0.5"/><rect x="270" y="68" width="7" height="85" rx=".5" opacity="0.85"/><rect x="281" y="68" width="3" height="85" rx=".5" opacity="0.5"/><rect x="288" y="68" width="2" height="85" rx=".5" opacity="0.9"/><rect x="294" y="68" width="5" height="85" rx=".5" opacity="0.75"/><rect x="303" y="68" width="2" height="85" rx=".5" opacity="0.6"/><rect x="309" y="68" width="6" height="85" rx=".5" opacity="0.9"/><rect x="319" y="68" width="3" height="85" rx=".5" opacity="0.6"/><rect x="326" y="68" width="2" height="85" rx=".5" opacity="1"/><rect x="332" y="68" width="4" height="85" rx=".5" opacity="0.6"/><rect x="340" y="68" width="6" height="85" rx=".5" opacity="0.8"/><rect x="350" y="68" width="2" height="85" rx=".5" opacity="0.5"/><rect x="356" y="68" width="3" height="85" rx=".5" opacity="0.9"/><rect x="363" y="68" width="6" height="85" rx=".5" opacity="0.65"/><rect x="373" y="68" width="2" height="85" rx=".5" opacity="0.9"/><rect x="379" y="68" width="5" height="85" rx=".5" opacity="0.5"/><rect x="388" y="68" width="2" height="85" rx=".5" opacity="0.8"/></g>
+    <path d="M162 110h276" stroke="#6fe5ff" stroke-width="9" opacity=".06"/>
+    <path d="M162 110h276" stroke="#6fe5ff" stroke-width="1.4" opacity=".92"/>
+    <circle cx="162" cy="110" r="2.5" fill="#a0f2ff"/><circle cx="438" cy="110" r="2.5" fill="#a0f2ff"/>
+  </g>
+  <path d="M90 187h62m300-154h62" stroke="#69c9f9" stroke-opacity=".25"/>
+</svg>
+            <figcaption>Barcode recognition <span>/ Illustration</span></figcaption>
+          </figure>
+          <div class="project-body">
             <h3 id="barcona-title">Barcona Systems</h3>
-            <p class="project-description">Camera-based inventory systems for warehouses. Software that reads barcodes, associates items with shelf locations, and flags inconsistencies.</p>
+            <p class="project-description">Camera-based inventory systems that read barcodes and associate items with shelf locations.</p>
+            <ul class="project-tags" aria-label="Project topics">
+              <li>Computer Vision</li><li>Software</li><li>Engineering</li>
+            </ul>
             <div class="project-bottom">
-              <span class="project-status"><span class="status-symbol status-symbol--square" aria-hidden="true"></span>Collaborative project</span>
-              <a class="project-link" href="https://thegreatwave21.github.io/barcona-systems/" rel="external noreferrer">Visit website <span class="link-arrow" aria-hidden="true">↗</span></a>
+              <p class="project-status"><span class="status-mark status-mark--square" aria-hidden="true"></span>Collaborative project</p>
+              <a class="project-link" href="https://thegreatwave21.github.io/barcona-systems/" rel="external noreferrer">Visit website <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
 
-        <article class="project" id="phaenovum" aria-labelledby="phaenovum-title">
-          <span class="project-number" aria-hidden="true">02 /</span>
-          <div class="project-content">
-            <p class="project-category">Research</p>
-            <h3 id="phaenovum-title">Phaenovum<br class="mobile-break"> Research Project</h3>
-            <p class="project-description">An ongoing research project at Phaenovum. More details will be shared after completion.</p>
+        <article class="project-card project-card--field" id="magnetic-carousel" aria-labelledby="magnetic-title" data-reveal>
+          <figure class="project-visual">
+            <span class="art-index" aria-hidden="true">02 /</span>
+            <span class="problem-label">Problem 16</span>
+            <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false" class="project-art">
+  <defs>
+    <linearGradient id="field-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70d9f0"/><stop offset=".48" stop-color="#a99bff"/><stop offset="1" stop-color="#707aff"/></linearGradient>
+    <radialGradient id="field-halo"><stop stop-color="#7b4ad0" stop-opacity=".3"/><stop offset="1" stop-color="#7b4ad0" stop-opacity="0"/></radialGradient>
+    <pattern id="field-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#b8b0ff" stroke-opacity=".08" stroke-width=".6"/></pattern>
+  </defs>
+  <path d="M0 0h600v220H0z" fill="url(#field-grid)"/>
+  <ellipse cx="300" cy="110" rx="238" ry="129" fill="url(#field-halo)"/>
+  <g fill="none" stroke="url(#field-edge)">
+    <ellipse cx="300" cy="110" rx="167" ry="61" stroke-opacity=".14" transform="rotate(-13 300 110)"/>
+    <ellipse cx="300" cy="110" rx="148" ry="42" stroke-opacity=".28" transform="rotate(13 300 110)"/>
+    <path d="M190 110c0-106 220-106 220 0s-220 106-220 0Z" stroke-opacity=".19"/>
+    <path d="M254 26c-76 69-76 98 0 168m92-168c76 69 76 98 0 168" stroke-opacity=".2"/>
+  </g>
+  <g transform="translate(300 110) scale(1 .78) rotate(-14)">
+    <circle r="89" fill="#11172c" fill-opacity=".45" stroke="url(#field-edge)" stroke-opacity=".44"/>
+    <circle r="61" fill="none" stroke="url(#field-edge)" stroke-opacity=".16"/>
+    <path d="M-48 0h96M0-48v96" stroke="#b9b3ff" stroke-opacity=".14"/>
+    <circle r="21" fill="#141d35" stroke="#8d94e2" stroke-opacity=".5"/>
+    <circle r="6" fill="#b1b0f3" fill-opacity=".6"/>
+    <g transform="rotate(0) translate(89 0) rotate(0)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(45) translate(89 0) rotate(-45)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(90) translate(89 0) rotate(-90)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(135) translate(89 0) rotate(-135)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(180) translate(89 0) rotate(-180)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(225) translate(89 0) rotate(-225)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(270) translate(89 0) rotate(-270)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(315) translate(89 0) rotate(-315)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g>
+  </g>
+</svg>
+            <figcaption>Magnetic carousel <span>/ Illustration</span></figcaption>
+          </figure>
+          <div class="project-body">
+            <h3 id="magnetic-title">GYPT <span class="title-dash">—</span> Magnetic Carousel</h3>
+            <p class="project-description">An ongoing experimental physics project at Phaenovum. More details after completion.</p>
+            <ul class="project-tags" aria-label="Project topics">
+              <li>Experimental Physics</li><li>Magnetism</li><li>Research</li>
+            </ul>
             <div class="project-bottom">
-              <span class="project-status project-status--ongoing"><span class="status-symbol" aria-hidden="true"></span>Research in progress</span>
+              <p class="project-status project-status--research"><span class="status-mark" aria-hidden="true"></span>Research in progress</p>
             </div>
           </div>
         </article>
@@ -76,8 +135,11 @@
   </main>
 
   <footer class="site-footer page-width">
-    <p>A personal project collection.</p>
-    <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    <p><span class="footer-name">Flipper-Black</span><span class="footer-divider" aria-hidden="true">/</span>Projects &amp; experiments.</p>
+    <div class="footer-actions">
+      <button class="motion-toggle" type="button" aria-pressed="false" hidden><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
+      <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
   </footer>
 </body>
 </html>

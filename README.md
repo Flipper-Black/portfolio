@@ -16,6 +16,18 @@ A collaborative project for camera-based inventory systems that read barcodes an
 
 An ongoing experimental physics project at Phaenovum. More details after completion.
 
+The Info section introduces the experiment: a steel ball above a rotating disc of alternating magnets can move with or against the disc’s rotation. [Official problem description](https://iypt.org/iypt-2027-problems/).
+
+### HeronShield
+
+An AI-based water sprayer that uses a camera to detect herons near a pond and activates a directed spray of water to deter them and help protect the fish.
+
+### ZeroXWaste
+
+A camera-based waste sorter with a rotating plate that directs items into four categories: organic waste, lightweight packaging (Gelber Sack), residual waste and paper.
+
+Every project has a short, expandable **Info** section. Native HTML details/summary controls support touch, keyboard and use without JavaScript.
+
 The project graphics are original abstract SVG illustrations. The magnetic carousel graphic is an illustration, not a scientific simulation or a presentation of results.
 
 ## Built with
@@ -50,3 +62,4 @@ All runtime asset paths are relative and support GitHub Pages under `/portfolio/
 Only the GitHub alias Flipper-Black is used as the owner's identity in the current website. No real name, private contact information, or private repository destination is included. The externally linked Barcona website may identify its public team members.
 
 This repository contains only the portfolio website and this README. Featured projects are maintained separately; their inclusion does not imply that source code or internal materials are public. Barcona remains an external link only.
+

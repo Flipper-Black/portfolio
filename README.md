@@ -6,7 +6,7 @@ A macOS Terminal-inspired personal website for Flipper-Black. A translucent char
 
 ## Content
 
-- Introduction and focus: software, computer vision, automation, engineering, and experimental physics.
+- Introduction and a dedicated About section: co-founding Barcona with Kenan, practical software and engineering, and the enjoyment of collaboration and hands-on experimentation. Includes links to Kenan’s portfolio and Barcona’s official website.
 - Barcona Systems — camera-based inventory and barcode recognition. [Official website](https://barconasystems.de/).
 - GYPT — Magnetic Carousel — experimental physics at Phaenovum. [Official problem](https://iypt.org/iypt-2027-problems/).
 - HeronShield — AI-guided water spray to help protect fish ponds.

@@ -2,7 +2,9 @@
 
 Projects in software, engineering, and experimental physics.
 
-**[Visit the portfolio →](https://flipper-black.github.io/portfolio/)**
+**[Visit the portfolio →](https://flipper-black.github.io/)**
+
+The site includes an introduction, focus areas, selected projects, and a contact section with GitHub and the owner’s LinkedIn profile. Its dark blue palette and original project illustrations are retained, with a clearer section hierarchy inspired by thegreatwave21.github.io.
 
 ## Projects
 
@@ -10,7 +12,7 @@ Projects in software, engineering, and experimental physics.
 
 A collaborative project for camera-based inventory systems that read barcodes and associate items with shelf locations.
 
-[Visit the project website](https://thegreatwave21.github.io/barcona-systems/)
+[Visit the project website](https://barconasystems.de/)
 
 ### GYPT — Magnetic Carousel · Problem 16
 
@@ -55,11 +57,11 @@ Then open [localhost:4174](http://127.0.0.1:4174/). No package installation or b
 
 `styles.css` contains the palette, light-field animations, card styling, breakpoints, focus styles, and reduced-motion overrides. `interactions.js` adds only progressive interaction behavior. `favicon.svg` contains the original bracket/slash mark.
 
-All runtime asset paths are relative and support GitHub Pages under `/portfolio/`. GitHub Pages serves the `main` branch from the repository root. `.nojekyll` keeps the site buildless.
+All runtime asset paths are relative. The user-site repository `Flipper-Black.github.io` serves the `main` branch from the root at https://flipper-black.github.io/. The legacy `/portfolio/` path redirects to the root, retaining query parameters and section links when JavaScript is available. `.nojekyll` keeps the site buildless.
 
 ## Scope and identity
 
-Only the GitHub alias Flipper-Black is used as the owner's identity in the current website. No real name, private contact information, or private repository destination is included. The externally linked Barcona website may identify its public team members.
+The site uses the GitHub alias Flipper-Black. Public social links are included with the owner’s approval. No private contact information or private repository destination is included. The externally linked Barcona website may identify its public team members.
 
 This repository contains only the portfolio website and this README. Featured projects are maintained separately; their inclusion does not imply that source code or internal materials are public. Barcona remains an external link only.
 

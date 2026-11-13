@@ -3,303 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flipper-Black — Software, Engineering &amp; Physics</title>
+  <title>Philipp Wirth — Developer &amp; Builder</title>
   <meta name="description" content="Turning ideas into working systems. Explore projects in computer vision, automation, engineering, and experimental physics by Flipper-Black.">
   <link rel="canonical" href="https://flipper-black.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flipper-black.github.io/">
-  <meta property="og:title" content="Flipper-Black — Building ideas into reality">
+  <meta property="og:title" content="Philipp Wirth — Code, engineering &amp; experiments">
   <meta property="og:description" content="Projects at the intersection of software, engineering, and experimental physics.">
   <meta name="referrer" content="no-referrer">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#080b14">
+  <meta name="theme-color" content="#1c1c1e">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20261113">
-  <script src="./interactions.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=terminal-20261113">
+  <script src="./interactions.js?v=terminal-20261113" defer></script>
 </head>
-<body id="top">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="ambient" aria-hidden="true">
-    <div class="light light--blue"></div>
-    <div class="light light--violet"></div>
-    <div class="light light--cyan"></div>
-    <div class="ambient-grid"></div>
-    <div class="ambient-points"></div>
-  </div>
-
-  <header class="site-header page-width">
-    <a class="wordmark" href="#top" aria-label="Flipper-Black, back to top">
-      <svg viewBox="0 0 28 28" fill="none" aria-hidden="true" class="brand-mark"><path d="M9 5H5v18h4m10-18h4v18h-4M17 8l-6 12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Flipper-Black</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#contact">Contact <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-
-  <main id="main" class="page-width" tabindex="-1">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-heading">
-        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Software · Engineering · Experimental physics</p>
-        <h1 id="hero-title">Building ideas<br><span>into reality.</span></h1>
-      </div>
-      <div class="hero-aside">
-        <p class="hero-description">Projects in software, engineering, and experimental physics.</p>
-        <div class="hero-actions">
-        <a class="explore-link" href="#projects">Explore projects <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="text-link" href="https://github.com/Flipper-Black" rel="external noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="https://www.linkedin.com/in/philipp-wirth-398b2a384/" rel="external noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+<body>
+  <a class="skip-link" href="#main">Skip to terminal content</a>
+  <div class="wallpaper" aria-hidden="true"></div>
+  <div class="desktop">
+    <div class="desktop-label" aria-hidden="true"><span class="desktop-mark">⌘</span> A little code. A lot of curiosity.</div>
+    <div class="window" id="terminal-window">
+      <header class="titlebar">
+        <div class="window-controls" aria-label="Window controls">
+          <button class="traffic-light close" type="button" aria-label="Hide terminal" disabled><span aria-hidden="true">×</span></button>
+          <button class="traffic-light minimize" type="button" aria-label="Minimize terminal" disabled><span aria-hidden="true">−</span></button>
+          <button class="traffic-light maximize" type="button" aria-label="Expand terminal" aria-pressed="false" disabled><span aria-hidden="true">+</span></button>
         </div>
+        <div class="window-title"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 4.5h5l1.5 1.5h6.5v7H1.5zM1.5 4.5V3h5l1.5 1.5h6.5V6"/></svg><span>visitor@portfolio — -zsh — 80×24</span></div>
+        <span class="titlebar-spacer" aria-hidden="true"></span>
+      </header>
+      <div class="toolbar">
+        <span class="session"><span class="status-dot" aria-hidden="true"></span>portfolio</span>
+        <nav aria-label="Portfolio sections"><a href="#about">~/about</a><a href="#projects">./projects</a><a href="#contact">./contact</a></nav>
       </div>
-    </section>
-
-    <section id="about" class="about-section" aria-labelledby="about-title" data-reveal>
-      <div class="section-heading">
-        <p class="section-kicker">01 / About</p>
-        <span class="section-caption">Curiosity → experimentation → building</span>
-      </div>
-      <div class="about-layout">
-        <h2 id="about-title">Where code meets<br><span>the physical world.</span></h2>
-        <div class="about-copy">
-          <p>I explore how software and engineering can turn an idea into something useful. My projects connect computer vision, automation, and hands-on experimentation.</p>
-          <p>From reading warehouse barcodes to sorting waste and investigating magnetic motion, I enjoy building systems that do something in the real world.</p>
-          <ul class="focus-list" aria-label="Focus areas"><li>Computer vision</li><li>Automation</li><li>Engineering</li><li>Experimental physics</li></ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects" aria-labelledby="projects-title">
-      <div class="section-heading" data-reveal>
-        <div><p class="section-kicker">02 / Projects</p><h2 id="projects-title">Ideas in action<span aria-hidden="true">.</span></h2></div>
-        <span class="section-caption">04 projects / Software &amp; hardware</span>
-      </div>
-      <!-- PROJECT CONTENT: Each article is the single source for its title, description,
-           tags, status and public link. Inline SVG graphics are abstract illustrations. -->
-      <div class="project-grid">
-        <article class="project-card project-card--scan" id="barcona" aria-labelledby="barcona-title" data-reveal>
-          <figure class="project-visual">
-            <span class="art-index" aria-hidden="true">01 /</span>
-            <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false" class="project-art">
-  <defs>
-    <linearGradient id="scan-edge" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#6fe5ff"/><stop offset="1" stop-color="#5e7aff"/></linearGradient>
-    <radialGradient id="scan-halo"><stop stop-color="#247bde" stop-opacity=".3"/><stop offset="1" stop-color="#247bde" stop-opacity="0"/></radialGradient>
-    <pattern id="scan-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#aac7ff" stroke-opacity=".09" stroke-width=".6"/></pattern>
-  </defs>
-  <path fill="url(#scan-grid)" d="M0 0h600v220H0z"/>
-  <ellipse cx="300" cy="113" rx="240" ry="130" fill="url(#scan-halo)"/>
-  <g fill="none" stroke="#7493c0" stroke-opacity=".14"><path d="M43 54h106v105H43zM451 54h106v105H451z"/><path d="M58 76h72m-72 12h42m-42 48h72m335-60h72m-72 12h42m-42 48h72"/></g>
-  <g transform="rotate(-5 300 110)">
-    <rect x="175" y="36" width="250" height="150" rx="9" fill="#101d36" fill-opacity=".8" stroke="#6ea7e5" stroke-opacity=".24"/>
-    <path d="M193 64V53h15m184 0h15v11M193 158v11h15m184 0h15v-11" fill="none" stroke="url(#scan-edge)" stroke-width="2"/>
-    <g fill="url(#scan-edge)"><rect x="211" y="68" width="2" height="85" rx=".5" opacity="0.4"/><rect x="217" y="68" width="5" height="85" rx=".5" opacity="0.85"/><rect x="226" y="68" width="2" height="85" rx=".5" opacity="0.6"/><rect x="232" y="68" width="3" height="85" rx=".5" opacity="0.8"/><rect x="240" y="68" width="6" height="85" rx=".5" opacity="0.6"/><rect x="250" y="68" width="2" height="85" rx=".5" opacity="1"/><rect x="256" y="68" width="4" height="85" rx=".5" opacity="0.7"/><rect x="264" y="68" width="2" height="85" rx=".5" opacity="0.5"/><rect x="270" y="68" width="7" height="85" rx=".5" opacity="0.85"/><rect x="281" y="68" width="3" height="85" rx=".5" opacity="0.5"/><rect x="288" y="68" width="2" height="85" rx=".5" opacity="0.9"/><rect x="294" y="68" width="5" height="85" rx=".5" opacity="0.75"/><rect x="303" y="68" width="2" height="85" rx=".5" opacity="0.6"/><rect x="309" y="68" width="6" height="85" rx=".5" opacity="0.9"/><rect x="319" y="68" width="3" height="85" rx=".5" opacity="0.6"/><rect x="326" y="68" width="2" height="85" rx=".5" opacity="1"/><rect x="332" y="68" width="4" height="85" rx=".5" opacity="0.6"/><rect x="340" y="68" width="6" height="85" rx=".5" opacity="0.8"/><rect x="350" y="68" width="2" height="85" rx=".5" opacity="0.5"/><rect x="356" y="68" width="3" height="85" rx=".5" opacity="0.9"/><rect x="363" y="68" width="6" height="85" rx=".5" opacity="0.65"/><rect x="373" y="68" width="2" height="85" rx=".5" opacity="0.9"/><rect x="379" y="68" width="5" height="85" rx=".5" opacity="0.5"/><rect x="388" y="68" width="2" height="85" rx=".5" opacity="0.8"/></g>
-    <path d="M162 110h276" stroke="#6fe5ff" stroke-width="9" opacity=".06"/>
-    <path d="M162 110h276" stroke="#6fe5ff" stroke-width="1.4" opacity=".92"/>
-    <circle cx="162" cy="110" r="2.5" fill="#a0f2ff"/><circle cx="438" cy="110" r="2.5" fill="#a0f2ff"/>
-  </g>
-  <path d="M90 187h62m300-154h62" stroke="#69c9f9" stroke-opacity=".25"/>
-</svg>
-            <figcaption>Barcode recognition <span>/ Illustration</span></figcaption>
-          </figure>
-          <div class="project-body">
-            <h3 id="barcona-title">Barcona Systems</h3>
-            <p class="project-description">Camera-based inventory systems that read barcodes and associate items with shelf locations.</p>
-            <ul class="project-tags" aria-label="Project topics">
-              <li>Computer Vision</li><li>Software</li><li>Engineering</li>
-            </ul>
-            <details class="project-info">
-              <summary><span>Info<span class="sr-only"> about Barcona Systems</span></span><span class="info-symbol" aria-hidden="true">+</span></summary>
-              <div class="project-info-content">
-                <p>BARCONA AI turns warehouse camera images into barcode values, shelf assignments and status flags. It is designed for cameras on existing forklifts or an autonomous scanning robot, helping keep track of inventory during everyday operations.</p>
-              </div>
-            </details>
-            <div class="project-bottom">
-              <p class="project-status"><span class="status-mark status-mark--square" aria-hidden="true"></span>Collaborative project</p>
-              <a class="project-link" href="https://barconasystems.de/" rel="external noreferrer">Visit website <span aria-hidden="true">↗</span></a>
-            </div>
+      <main class="terminal-body" id="main" tabindex="0" aria-label="Portfolio terminal">
+        <p class="session-note"># Personal portfolio · software, engineering &amp; experimental physics</p>
+        <section class="intro terminal-section" id="about" aria-labelledby="intro-title">
+          <p class="prompt"><span class="prompt-user">visitor@portfolio</span> <span class="prompt-path">~</span> <span class="prompt-symbol">%</span> <span class="command">cat README.md</span></p>
+          <div class="intro-output">
+            <p class="file-label">PHILIPP WIRTH <span>/ FLIPPER-BLACK</span></p>
+            <h1 id="intro-title">Hi, I’m Philipp<span class="accent">.</span></h1>
+            <p class="intro-lead">I turn ideas into working systems.</p>
+            <p class="intro-description">Building where code meets the physical world —<br class="desktop-break"> through computer vision, automation, and hands-on experiments.</p>
+            <div class="intro-links"><a href="https://github.com/Flipper-Black" rel="external noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/philipp-wirth-398b2a384/" rel="external noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><span class="link-comment">// always exploring</span></div>
           </div>
-        </article>
-
-        <article class="project-card project-card--field" id="magnetic-carousel" aria-labelledby="magnetic-title" data-reveal>
-          <figure class="project-visual">
-            <span class="art-index" aria-hidden="true">02 /</span>
-            <span class="problem-label">Problem 16</span>
-            <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false" class="project-art">
-  <defs>
-    <linearGradient id="field-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70d9f0"/><stop offset=".48" stop-color="#a99bff"/><stop offset="1" stop-color="#707aff"/></linearGradient>
-    <radialGradient id="field-halo"><stop stop-color="#7b4ad0" stop-opacity=".3"/><stop offset="1" stop-color="#7b4ad0" stop-opacity="0"/></radialGradient>
-    <pattern id="field-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#b8b0ff" stroke-opacity=".08" stroke-width=".6"/></pattern>
-  </defs>
-  <path d="M0 0h600v220H0z" fill="url(#field-grid)"/>
-  <ellipse cx="300" cy="110" rx="238" ry="129" fill="url(#field-halo)"/>
-  <g fill="none" stroke="url(#field-edge)">
-    <ellipse cx="300" cy="110" rx="167" ry="61" stroke-opacity=".14" transform="rotate(-13 300 110)"/>
-    <ellipse cx="300" cy="110" rx="148" ry="42" stroke-opacity=".28" transform="rotate(13 300 110)"/>
-    <path d="M190 110c0-106 220-106 220 0s-220 106-220 0Z" stroke-opacity=".19"/>
-    <path d="M254 26c-76 69-76 98 0 168m92-168c76 69 76 98 0 168" stroke-opacity=".2"/>
-  </g>
-  <g transform="translate(300 110) scale(1 .78) rotate(-14)">
-    <circle r="89" fill="#11172c" fill-opacity=".45" stroke="url(#field-edge)" stroke-opacity=".44"/>
-    <circle r="61" fill="none" stroke="url(#field-edge)" stroke-opacity=".16"/>
-    <path d="M-48 0h96M0-48v96" stroke="#b9b3ff" stroke-opacity=".14"/>
-    <circle r="21" fill="#141d35" stroke="#8d94e2" stroke-opacity=".5"/>
-    <circle r="6" fill="#b1b0f3" fill-opacity=".6"/>
-    <g transform="rotate(0) translate(89 0) rotate(0)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(45) translate(89 0) rotate(-45)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(90) translate(89 0) rotate(-90)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(135) translate(89 0) rotate(-135)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(180) translate(89 0) rotate(-180)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(225) translate(89 0) rotate(-225)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(270) translate(89 0) rotate(-270)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g><g transform="rotate(315) translate(89 0) rotate(-315)"><rect x="-9" y="-17" width="18" height="34" rx="4" fill="#121a35" stroke="#a9a4ff" stroke-opacity=".8"/><path d="M-6-13h12v10H-6z" fill="#a99bff" fill-opacity=".78"/><path d="M-6 3H6v10H-6z" fill="#70d9f0" fill-opacity=".66"/></g>
-  </g>
-</svg>
-            <figcaption>Magnetic carousel <span>/ Illustration</span></figcaption>
-          </figure>
-          <div class="project-body">
-            <h3 id="magnetic-title">GYPT <span class="title-dash">—</span> Magnetic Carousel</h3>
-            <p class="project-description">An ongoing experimental physics project at Phaenovum. More details after completion.</p>
-            <ul class="project-tags" aria-label="Project topics">
-              <li>Experimental Physics</li><li>Magnetism</li><li>Research</li>
-            </ul>
-            <details class="project-info">
-              <summary><span>Info<span class="sr-only"> about GYPT — Magnetic Carousel</span></span><span class="info-symbol" aria-hidden="true">+</span></summary>
-              <div class="project-info-content">
-                <p>A GYPT research project at Phaenovum exploring a steel ball above a rotating disc of alternating magnets. The experiment investigates why the ball can travel with or against the disc’s rotation, and how changing the setup affects its motion.</p>
-                <a class="info-source" href="https://iypt.org/iypt-2027-problems/" rel="external noreferrer">Problem 16 · Official description <span aria-hidden="true">↗</span></a>
-              </div>
-            </details>
-            <div class="project-bottom">
-              <p class="project-status project-status--research"><span class="status-mark" aria-hidden="true"></span>Research in progress</p>
+        </section>
+        <section class="terminal-section projects-section" id="projects" aria-labelledby="projects-title">
+          <p class="prompt"><span class="prompt-user">visitor@portfolio</span> <span class="prompt-path">~</span> <span class="prompt-symbol">%</span> <span class="command">ls ./projects</span></p>
+          <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span>4 directories</span></div>
+        <article class="project" id="barcona" aria-labelledby="barcona-title">
+          <div class="project-heading"><span class="project-index" aria-hidden="true">01</span><h3 id="barcona-title">Barcona Systems</h3><span class="project-category">computer vision</span></div>
+          <p class="project-description">Camera-based inventory and barcode recognition.</p>
+          <details class="project-info" data-project="barcona">
+            <summary><span class="summary-label">more info<span class="sr-only"> about Barcona Systems</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+            <div class="info-output">
+              <pre class="code-output" aria-hidden="true" hidden></pre>
+              <div class="info-body"><p>BARCONA AI turns warehouse camera images into barcode values, shelf assignments and status flags. It is designed for cameras on existing forklifts or an autonomous scanning robot, helping keep track of inventory during everyday operations.</p><div class="project-meta"><span><span class="status-dot" aria-hidden="true"></span>Collaborative project</span><a class="project-website" href="https://barconasystems.de/" rel="external noreferrer">Visit website <span aria-hidden="true">↗</span></a></div></div>
             </div>
-          </div>
+          </details>
         </article>
-        <article class="project-card project-card--water" id="heronshield" aria-labelledby="heronshield-title" data-reveal>
-          <figure class="project-visual">
-            <span class="art-index" aria-hidden="true">03 /</span>
-            <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false" class="project-art">
-              <defs>
-                <linearGradient id="water-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#74e4df"/><stop offset="1" stop-color="#6bafff"/></linearGradient>
-                <radialGradient id="water-halo"><stop stop-color="#237f9f" stop-opacity=".28"/><stop offset="1" stop-color="#237f9f" stop-opacity="0"/></radialGradient>
-                <pattern id="water-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#a3dbec" stroke-opacity=".08" stroke-width=".6"/></pattern>
-              </defs>
-              <path d="M0 0h600v220H0z" fill="url(#water-grid)"/>
-              <ellipse cx="300" cy="110" rx="240" ry="130" fill="url(#water-halo)"/>
-              <g fill="none" stroke="url(#water-edge)">
-                <ellipse cx="343" cy="165" rx="162" ry="22" stroke-opacity=".12"/>
-                <ellipse cx="343" cy="165" rx="122" ry="14" stroke-opacity=".24"/>
-                <path d="M254 165c27-6 62-6 89 0s62 6 89 0" stroke-opacity=".3"/>
-                <path d="m210 115 181-54v93Z" stroke-opacity=".16" stroke-dasharray="4 6"/>
-                <path d="M208 105Q300 19 391 107" stroke-width="1.5" stroke-dasharray="3 8" stroke-linecap="round" stroke-opacity=".85"/>
-              </g>
-              <g fill="#102239" stroke="url(#water-edge)">
-                <path d="M163 151h56l8 14h-72Z" stroke-opacity=".5"/>
-                <rect x="179" y="112" width="24" height="39" rx="4" stroke-opacity=".55"/>
-                <rect x="164" y="90" width="53" height="29" rx="6" stroke-opacity=".8"/>
-                <path d="m211 94 15-8 6 11-17 7" stroke-opacity=".85"/>
-                <circle cx="180" cy="104" r="6" fill="#74e4df" fill-opacity=".16" stroke-opacity=".7"/>
-                <circle cx="180" cy="104" r="2" fill="#a8f5ec" stroke="none"/>
-              </g>
-              <g fill="none" stroke="url(#water-edge)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M379 131c-15-4-19-15-15-25l18-21-5-15c-2-8 3-14 11-14h10l17 7-20 4c-2 9-3 14-1 21l11 20c7 15-6 27-26 23Z" fill="#14263a" fill-opacity=".6" stroke-opacity=".7"/>
-                <path d="m377 111 20 9m-18 13-6 28m20-29 7 29m-33 0h12m15 0h12" stroke-opacity=".6"/>
-                <path d="M352 72v-9h10m58 0h10v9m0 62v9h-10m-58 0h-10v-9" stroke-opacity=".45"/>
-              </g>
-              <circle cx="389" cy="62" r="1.5" fill="#b7f5ed"/>
-            </svg>
-            <figcaption>Vision-guided pond protection <span>/ Illustration</span></figcaption>
-          </figure>
-          <div class="project-body">
-            <h3 id="heronshield-title">HeronShield</h3>
-            <p class="project-description">An AI-based water sprayer that detects herons and helps protect fish ponds.</p>
-            <ul class="project-tags" aria-label="Project topics">
-              <li>Computer Vision</li><li>AI</li><li>Automation</li>
-            </ul>
-            <details class="project-info">
-              <summary><span>Info<span class="sr-only"> about HeronShield</span></span><span class="info-symbol" aria-hidden="true">+</span></summary>
-              <div class="project-info-content">
-                <p>A camera monitors the pond while AI identifies approaching herons. When a heron is detected, the system activates a directed spray of water to deter it and help protect the fish.</p>
-              </div>
-            </details>
-            <div class="project-bottom">
-              <p class="project-status"><span class="status-mark status-mark--square" aria-hidden="true"></span>AI-based pond protection</p>
+        <article class="project" id="magnetic-carousel" aria-labelledby="magnetic-carousel-title">
+          <div class="project-heading"><span class="project-index" aria-hidden="true">02</span><h3 id="magnetic-carousel-title">GYPT — Magnetic Carousel</h3><span class="project-category">experimental physics</span></div>
+          <p class="project-description">Investigating magnetic motion at Phaenovum.</p>
+          <details class="project-info" data-project="magnetic-carousel">
+            <summary><span class="summary-label">more info<span class="sr-only"> about GYPT — Magnetic Carousel</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+            <div class="info-output">
+              <pre class="code-output" aria-hidden="true" hidden></pre>
+              <div class="info-body"><p>A GYPT research project at Phaenovum exploring a steel ball above a rotating disc of alternating magnets. The experiment investigates why the ball can travel with or against the disc’s rotation, and how changing the setup affects its motion.</p>
+                <a class="info-source" href="https://iypt.org/iypt-2027-problems/" rel="external noreferrer">Problem 16 · Official description <span aria-hidden="true">↗</span></a><div class="project-meta"><span><span class="status-dot" aria-hidden="true"></span>Research in progress</span></div></div>
             </div>
-          </div>
+          </details>
         </article>
-
-        <article class="project-card project-card--waste" id="zeroxwaste" aria-labelledby="zeroxwaste-title" data-reveal>
-          <figure class="project-visual">
-            <span class="art-index" aria-hidden="true">04 /</span>
-            <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false" class="project-art">
-              <defs>
-                <linearGradient id="waste-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a2e4ba"/><stop offset="1" stop-color="#74cfde"/></linearGradient>
-                <radialGradient id="waste-halo"><stop stop-color="#3c876b" stop-opacity=".24"/><stop offset="1" stop-color="#3c876b" stop-opacity="0"/></radialGradient>
-                <pattern id="waste-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#b3dfc9" stroke-opacity=".08" stroke-width=".6"/></pattern>
-              </defs>
-              <path d="M0 0h600v220H0z" fill="url(#waste-grid)"/>
-              <ellipse cx="300" cy="110" rx="240" ry="130" fill="url(#waste-halo)"/>
-              <g fill="none" stroke="url(#waste-edge)">
-                <path d="M278 54 220 107m102-53 58 53" stroke-opacity=".22" stroke-dasharray="3 5"/>
-                <path d="M222 103c-23 12-26 31-8 44m171-44c23 12 26 31 8 44" stroke-opacity=".35"/>
-                <path d="m209 136 5 11 11-5m157-5 11 10 5-11" stroke-opacity=".6"/>
-              </g>
-              <g fill="#142a2c" stroke="url(#waste-edge)">
-                <rect x="277" y="31" width="46" height="25" rx="6" stroke-opacity=".65"/>
-                <circle cx="300" cy="43" r="6" fill="#a2e4ba" fill-opacity=".12" stroke-opacity=".7"/>
-                <circle cx="300" cy="43" r="2" fill="#c2f2d4" stroke="none"/>
-                <path d="m297 75 15 8 3 18-12 8-16-7-3-18Z" fill="#8fdbc3" fill-opacity=".15" stroke-opacity=".7"/>
-                <path d="m287 84 15 7 10-8m-10 8 1 18" fill="none" stroke-opacity=".35"/>
-                <ellipse cx="300" cy="119" rx="77" ry="19" fill="#16302f" stroke-opacity=".75"/>
-                <path d="M223 119v8c0 25 154 25 154 0v-8" fill="none" stroke-opacity=".35"/>
-                <path d="m300 119 42-11m-42 11 8 7" fill="none" stroke-opacity=".7" stroke-width="1.5"/>
-                <circle cx="300" cy="119" r="4" fill="#a2e4ba" fill-opacity=".55" stroke="none"/>
-                <path d="M298 143v16m-47 0h98" stroke-opacity=".35"/>
-              </g>
-              <g stroke-width="1.2">
-                <path d="M183 152h43l-4 32h-35Z" fill="#8bd4b6" fill-opacity=".10" stroke="#8bd4b6" stroke-opacity=".6"/>
-                <path d="M247 152h43l-4 32h-35Z" fill="#e4cf88" fill-opacity=".10" stroke="#e4cf88" stroke-opacity=".6"/>
-                <path d="M311 152h43l-4 32h-35Z" fill="#b1bdcf" fill-opacity=".10" stroke="#b1bdcf" stroke-opacity=".6"/>
-                <path d="M375 152h43l-4 32h-35Z" fill="#85b8ed" fill-opacity=".10" stroke="#85b8ed" stroke-opacity=".6"/>
-              </g>
-              <path d="M195 160h18m46 0h18m46 0h18m46 0h18" stroke="#c5e8db" stroke-opacity=".3"/>
-            </svg>
-            <figcaption>Camera-based waste sorting <span>/ Illustration</span></figcaption>
-          </figure>
-          <div class="project-body">
-            <h3 id="zeroxwaste-title">ZeroXWaste</h3>
-            <p class="project-description">A camera-based sorting bin that directs waste into the right compartment.</p>
-            <ul class="project-tags" aria-label="Project topics">
-              <li>Computer Vision</li><li>Robotics</li><li>Sustainability</li>
-            </ul>
-            <details class="project-info">
-              <summary><span>Info<span class="sr-only"> about ZeroXWaste</span></span><span class="info-symbol" aria-hidden="true">+</span></summary>
-              <div class="project-info-content">
-                <p>A camera identifies waste placed on a sorting plate and assigns it to one of four categories: organic waste, lightweight packaging (Gelber Sack), residual waste or paper. The plate then turns towards the corresponding bin to guide the item into the right compartment.</p>
-              </div>
-            </details>
-            <div class="project-bottom">
-              <p class="project-status"><span class="status-mark status-mark--square" aria-hidden="true"></span>Automated waste sorting</p>
+        <article class="project" id="heronshield" aria-labelledby="heronshield-title">
+          <div class="project-heading"><span class="project-index" aria-hidden="true">03</span><h3 id="heronshield-title">HeronShield</h3><span class="project-category">ai & automation</span></div>
+          <p class="project-description">Vision-guided water spray to help protect fish ponds.</p>
+          <details class="project-info" data-project="heronshield">
+            <summary><span class="summary-label">more info<span class="sr-only"> about HeronShield</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+            <div class="info-output">
+              <pre class="code-output" aria-hidden="true" hidden></pre>
+              <div class="info-body"><p>A camera monitors the pond while AI identifies approaching herons. When a heron is detected, the system activates a directed spray of water to deter it and help protect the fish.</p><div class="project-meta"><span><span class="status-dot" aria-hidden="true"></span>Pond protection</span></div></div>
             </div>
-          </div>
+          </details>
         </article>
-      </div>
-      <!-- END PROJECT CONTENT -->
-    </section>
-
-    <section id="contact" class="contact-section" aria-labelledby="contact-title" data-reveal>
-      <div class="contact-copy">
-        <p class="section-kicker">03 / Connect</p>
-        <h2 id="contact-title">Good ideas start<br>with a conversation<span>.</span></h2>
-        <p>Interested in software, engineering, or a shared experiment? Let’s connect.</p>
-      </div>
-      <div class="contact-links">
-        <a class="contact-link" href="https://www.linkedin.com/in/philipp-wirth-398b2a384/" rel="external noreferrer"><span><span class="contact-label">Start a conversation</span>LinkedIn</span><span aria-hidden="true">↗</span></a>
-        <a class="contact-link" href="https://github.com/Flipper-Black" rel="external noreferrer"><span><span class="contact-label">Explore the code</span>GitHub</span><span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer page-width">
-    <p><span class="footer-name">Flipper-Black</span><span class="footer-divider" aria-hidden="true">/</span>Projects &amp; experiments.</p>
-    <div class="footer-actions">
-      <button class="motion-toggle" type="button" aria-pressed="false" hidden><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
-      <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <article class="project" id="zeroxwaste" aria-labelledby="zeroxwaste-title">
+          <div class="project-heading"><span class="project-index" aria-hidden="true">04</span><h3 id="zeroxwaste-title">ZeroXWaste</h3><span class="project-category">robotics</span></div>
+          <p class="project-description">Camera-based waste sorting. Four bins. One rotating plate.</p>
+          <details class="project-info" data-project="zeroxwaste">
+            <summary><span class="summary-label">more info<span class="sr-only"> about ZeroXWaste</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+            <div class="info-output">
+              <pre class="code-output" aria-hidden="true" hidden></pre>
+              <div class="info-body"><p>A camera identifies waste placed on a sorting plate and assigns it to one of four categories: organic waste, lightweight packaging (Gelber Sack), residual waste or paper. The plate then turns towards the corresponding bin to guide the item into the right compartment.</p><div class="project-meta"><span><span class="status-dot" aria-hidden="true"></span>Waste sorting</span></div></div>
+            </div>
+          </details>
+        </article>
+        </section>
+        <section class="terminal-section contact-section" id="contact" aria-labelledby="contact-title">
+          <p class="prompt"><span class="prompt-user">visitor@portfolio</span> <span class="prompt-path">~</span> <span class="prompt-symbol">%</span> <span class="command">cat contact.json</span></p>
+          <h2 id="contact-title" class="sr-only">Connect with me</h2>
+          <div class="contact-output"><span class="brace" aria-hidden="true">{</span><p><span class="json-key">"github"</span><span class="punctuation">:</span> <a href="https://github.com/Flipper-Black" rel="external noreferrer">"Flipper-Black" <span aria-hidden="true">↗</span></a><span class="punctuation">,</span></p><p><span class="json-key">"linkedin"</span><span class="punctuation">:</span> <a href="https://www.linkedin.com/in/philipp-wirth-398b2a384/" rel="external noreferrer">"Philipp Wirth" <span aria-hidden="true">↗</span></a></p><span class="brace" aria-hidden="true">}</span></div>
+          <p class="contact-note"># Good ideas start with a conversation. Let’s connect.</p>
+        </section>
+        <p class="prompt final-prompt" aria-hidden="true"><span class="prompt-user">visitor@portfolio</span> <span class="prompt-path">~</span> <span class="prompt-symbol">%</span> <span class="cursor"></span></p>
+        <p class="sr-only" id="terminal-announcement" role="status" aria-live="polite"></p>
+      </main>
+      <footer class="statusbar"><span><span class="status-dot" aria-hidden="true"></span>4 projects · endless curiosity</span><div><button class="motion-toggle" type="button" aria-pressed="false" hidden>Motion: on</button><span class="encoding">UTF-8</span><span>zsh</span></div></footer>
     </div>
-  </footer>
+    <div class="desktop-footer"><span>Built with HTML, CSS &amp; curiosity.</span><button class="restore-terminal" type="button" hidden><span aria-hidden="true">&gt;_</span> Open terminal</button><a href="https://github.com/Flipper-Black/Flipper-Black.github.io" rel="external noreferrer">View source <span aria-hidden="true">↗</span></a></div>
+  </div>
 </body>
 </html>
-

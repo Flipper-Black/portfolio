@@ -1,67 +1,34 @@
-# Flipper-Black — Projects
+# Philipp Wirth — Terminal portfolio
 
-Projects in software, engineering, and experimental physics.
+**[Open the portfolio →](https://flipper-black.github.io/)**
 
-**[Visit the portfolio →](https://flipper-black.github.io/)**
+A macOS Terminal-inspired personal website for Flipper-Black. A translucent charcoal window sits above a midnight blue and purple wallpaper, with native system monospace typography, colored shell prompts, amber links, and a block cursor.
 
-The site includes an introduction, focus areas, selected projects, and a contact section with GitHub and the owner’s LinkedIn profile. Its dark blue palette and original project illustrations are retained, with a clearer section hierarchy inspired by thegreatwave21.github.io.
+## Content
 
-## Projects
+- Introduction and focus: software, computer vision, automation, engineering, and experimental physics.
+- Barcona Systems — camera-based inventory and barcode recognition. [Official website](https://barconasystems.de/).
+- GYPT — Magnetic Carousel — experimental physics at Phaenovum. [Official problem](https://iypt.org/iypt-2027-problems/).
+- HeronShield — AI-guided water spray to help protect fish ponds.
+- ZeroXWaste — camera-based sorting into four waste categories.
+- [GitHub](https://github.com/Flipper-Black) and the owner’s approved [LinkedIn profile](https://www.linkedin.com/in/philipp-wirth-398b2a384/).
 
-### Barcona Systems
+## Interaction
 
-A collaborative project for camera-based inventory systems that read barcodes and associate items with shelf locations.
+Each native `details` control opens a project. With JavaScript enabled, a short decorative code sequence types out over 740 ms, then reveals the project notes. This is a visual effect; no arbitrary code is executed. Closing a panel cancels its animation. Reduced-motion preferences or the persisted Motion toggle reveal notes immediately. Typed characters are hidden from screen readers, with one completion announcement.
 
-[Visit the project website](https://barconasystems.de/)
+Window controls hide/minimize and restore the terminal, or expand it within the browser. Escape restores the normal window size. Keyboard focus is retained when restoring. The site remains readable and project notes remain available without JavaScript; window controls are disabled until JavaScript is ready.
 
-### GYPT — Magnetic Carousel · Problem 16
+## Development
 
-An ongoing experimental physics project at Phaenovum. More details after completion.
-
-The Info section introduces the experiment: a steel ball above a rotating disc of alternating magnets can move with or against the disc’s rotation. [Official problem description](https://iypt.org/iypt-2027-problems/).
-
-### HeronShield
-
-An AI-based water sprayer that uses a camera to detect herons near a pond and activates a directed spray of water to deter them and help protect the fish.
-
-### ZeroXWaste
-
-A camera-based waste sorter with a rotating plate that directs items into four categories: organic waste, lightweight packaging (Gelber Sack), residual waste and paper.
-
-Every project has a short, expandable **Info** section. Native HTML details/summary controls support touch, keyboard and use without JavaScript.
-
-The project graphics are original abstract SVG illustrations. The magnetic carousel graphic is an illustration, not a scientific simulation or a presentation of results.
-
-## Built with
-
-- Semantic HTML, responsive CSS, inline SVG artwork, and local system fonts.
-- A small, dependency-free JavaScript file for the Pause motion control, one-time scroll reveals, and a pointer-position card reflection.
-- All text, illustrations, and links remain usable without JavaScript.
-- No external fonts, third-party libraries, trackers, analytics, cookies, or unnecessary external services.
-
-Three slow light fields use CSS transform animations. The script pauses them when the page is hidden or the user pauses motion. The OS reduced-motion preference disables CSS animation and JavaScript motion effects. Pointer effects are limited to fine hover-capable pointers and use event-driven animation frames; no permanent JavaScript animation loop or polling timer is used.
-
-## Local preview
-
-Open this repository's folder and run:
+Static HTML, CSS, and JavaScript. No build step, external fonts, libraries, trackers, or third-party scripts. The only stored browser preference is the Motion setting.
 
 ```sh
 python3 -m http.server 4174 --bind 127.0.0.1
 ```
 
-Then open [localhost:4174](http://127.0.0.1:4174/). No package installation or build is required.
+Edit `index.html` for content, `styles.css` for appearance, and `interactions.js` for enhancements. Assets use relative paths. GitHub Pages serves `main` from the repository root. `.nojekyll` keeps it buildless. `portfolio/index.html` redirects the old `/portfolio/` URL to the root.
 
-## Editing
+## Verification
 
-`index.html` is the single source for the hero and project content. Find the **PROJECT CONTENT** comment to edit project titles, descriptions, tags, statuses, illustrations, and the approved public project link.
-
-`styles.css` contains the palette, light-field animations, card styling, breakpoints, focus styles, and reduced-motion overrides. `interactions.js` adds only progressive interaction behavior. `favicon.svg` contains the original bracket/slash mark.
-
-All runtime asset paths are relative. The user-site repository `Flipper-Black.github.io` serves the `main` branch from the root at https://flipper-black.github.io/. The legacy `/portfolio/` path redirects to the root, retaining query parameters and section links when JavaScript is available. `.nojekyll` keeps the site buildless.
-
-## Scope and identity
-
-The site uses the GitHub alias Flipper-Black. Public social links are included with the owner’s approval. No private contact information or private repository destination is included. The externally linked Barcona website may identify its public team members.
-
-This repository contains only the portfolio website and this README. Featured projects are maintained separately; their inclusion does not imply that source code or internal materials are public. Barcona remains an external link only.
-
+Checked in Safari at desktop, 390 px, and 320 px widths: Terminal frame, project navigation, expanded project text and code wrapping, Motion toggle, minimize/restore, and expand/Escape. Static checks cover asset paths, section links, labels, project count, and public social URLs.
